@@ -81,7 +81,7 @@
       theme = "gentoo";
     };
   };
-
+#
   # Nixvim config
   programs.nixvim = {
     enable = true;
@@ -95,6 +95,9 @@
     plugins = {
       lualine.enable = true;
     };
+    extraPlugins = with pkgs.vimPlugins; [
+      yuck-vim
+    ];
   };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
