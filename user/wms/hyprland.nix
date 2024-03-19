@@ -13,11 +13,11 @@
       monitor = eDP-1, 1920x1080@60, 0x0, 1
     ";
     settings = {
-      general = with config.colorScheme.colors; {
+      general = with config.colorScheme.palette; {
 	border_size = 2;
 	gaps_in = 5;
 	gaps_out = 5;
-        "col.active_border" = "rgba(${config.colorScheme.palette.base0E}ff) rgba(${config.colorScheme.palette.base09}ff) 60deg";
+        "col.active_border" = "rgba(${base0E}ff) rgba(${base09}ff) 60deg";
 	"col.inactive_border" = "rgba(${base00}ff)";
 	layout = "dwindle";
 
@@ -43,7 +43,7 @@
       "$mod" = "SUPER";
 
       bindm = [
-        "$mod, mouse:272, movewindow"
+ 	"$mod, mouse:272, movewindow"
 	"$mod, mouse:273, resizewindow"
 	"$mod ALT, mouse:272, resizewindow"
       ];
@@ -57,8 +57,22 @@
 	  "$mod, Space, exec, wofi --show drun"
 	  ", Print, exec, grimblast copy area"
 	  "$mod, E, exec, thunar"
-        ];
-
+        ]
+	++ (
+	  # workspace binds
+	  builtins.concatLists (builtins.genList (
+	    x: let
+	      ws = let
+		c = (x + 1) / 10;
+	      in
+		builtins.toString (x + 1 - (c * 10));
+	    in [
+	      "$mod, ${ws}, workspace, ${toString (x + 1)}"
+	      "$mod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
+	    ]
+	  )
+	  10)
+	);
     };
   };
 }
