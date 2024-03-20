@@ -34,12 +34,12 @@
     pkgs.alacritty
     pkgs.wofi
     pkgs.grimblast
+    pkgs.grim
     # pkgs.waybar
     pkgs.mako
     pkgs.swww
     pkgs.firefox
     pkgs.alacritty-theme
-    pkgs.wireplumber
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
