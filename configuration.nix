@@ -83,6 +83,9 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  
+  # gvfs support for thunar
+  services.gvfs.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
