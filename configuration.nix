@@ -108,6 +108,7 @@
       corefonts
       vistafonts
       powerline-fonts
+      font-awesome
     ];
     fontconfig.defaultFonts = {
       serif = [ "Liberation" ];
