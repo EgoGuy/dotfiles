@@ -55,7 +55,7 @@
 	  "$mod, V, togglefloating,"
 	  "$mod, M, exit"
 	  "$mod, Space, exec, wofi --show drun"
-	  ", Print, exec, grimblast copy area"
+	  ", Print, exec, grimblast --freeze copy area"
 	  "$mod, E, exec, thunar"
         ]
 	++ (

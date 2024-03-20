@@ -33,7 +33,7 @@
     pkgs.hello
     pkgs.alacritty
     pkgs.wofi
-    pkgs.grimblast
+    pkgs.grimblast`
     pkgs.grim
     # pkgs.waybar
     pkgs.mako
@@ -60,7 +60,7 @@
     autocd = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
-   
+    initExtra = "neofetch"; 
     history = {
       size = 10000;
       path = "${config.xdg.dataHome}/zsh/history";
