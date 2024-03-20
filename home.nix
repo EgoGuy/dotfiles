@@ -104,7 +104,7 @@
   # Thunar plugins
   programs.thunar = {
     enable = true;
-    plugins = with pkgs.xfce; [ thunar-volman thunar-archive-plugin thunar-media-tags-plugin ]
+    plugins = with pkgs.xfce; [ thunar-volman thunar-archive-plugin thunar-media-tags-plugin ];
   };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
