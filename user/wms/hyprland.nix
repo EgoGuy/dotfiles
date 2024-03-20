@@ -2,7 +2,7 @@
 
 {
   imports = [
-    # ./waybar.nix
+     # ./waybar.nix
   ];
 
   wayland.windowManager.hyprland = {
@@ -74,5 +74,9 @@
 	  10)
 	);
     };
+  };
+  programs.eww = {
+    enable = true;
+    configDir = ./eww;
   };
 }
