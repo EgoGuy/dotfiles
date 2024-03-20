@@ -102,7 +102,7 @@
       corefonts
       vistafonts
     ];
-    defaultFonts = {
+    fontconfig.defaultFonts = {
       serif = [ "Liberation" ];
       sansSerif = [ "Liberation" ];
       monospace = [ "Liberation" ];
