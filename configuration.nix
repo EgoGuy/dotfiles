@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./system/hyprland.nix
+      ./system/greetd.nix
     ];
 
   # Bootloader.
