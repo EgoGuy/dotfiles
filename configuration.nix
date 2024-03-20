@@ -102,6 +102,12 @@
       corefonts
       vistafonts
     ];
+    defaultFonts = {
+      serif = [ "Liberation" ];
+      sansSerif = [ "Liberation" ];
+      monospace = [ "Liberation" ];
+      emoji = [ "Noto Color Emoji" ];
+    };
   };
 
   # Some programs need SUID wrappers, can be configured further or are
