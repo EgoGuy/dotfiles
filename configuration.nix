@@ -28,6 +28,11 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  nix.settings = {
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  };
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
@@ -86,6 +91,7 @@
     git
     ranger
     neofetch
+    cmake
   ];
 
   fonts = {
@@ -101,6 +107,7 @@
       nerdfonts
       corefonts
       vistafonts
+      powerline-fonts
     ];
     fontconfig.defaultFonts = {
       serif = [ "Liberation" ];

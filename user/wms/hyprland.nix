@@ -9,7 +9,7 @@
     enable = true;
     extraConfig = "
       exec-once = swww init
-      exec-once = waybar
+      exec-once = eww daemon
       monitor = eDP-1, 1920x1080@60, 0x0, 1
     ";
     settings = {
@@ -74,9 +74,5 @@
 	  10)
 	);
     };
-  };
-  programs.eww = {
-    enable = true;
-    configDir = ./eww;
   };
 }
