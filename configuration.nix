@@ -92,6 +92,8 @@
     ranger
     neofetch
     cmake
+    pavucontrol
+    pamixer
   ];
 
   fonts = {
