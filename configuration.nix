@@ -11,6 +11,9 @@
       ./system/hyprland.nix
       ./system/greetd.nix
     ];
+  
+  # Kernel version.
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Bootloader.
   boot.loader.grub.enable = true;
