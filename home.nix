@@ -33,7 +33,7 @@
     pkgs.hello
     pkgs.alacritty
     pkgs.wofi
-    pkgs.grimblast`
+    pkgs.grimblast
     pkgs.grim
     # pkgs.waybar
     pkgs.mako
