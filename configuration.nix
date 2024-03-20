@@ -78,9 +78,6 @@
     packages = with pkgs; [];
   };
 
-  # Enable automatic login for the user.
-  services.getty.autologinUser = "xanderm";
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
