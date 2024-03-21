@@ -85,6 +85,7 @@
     textColor = "#cdd6f4";
     progressColor = "over #313244";
     backgroundColor = "#1e1e2e";
+    anchor = "bottom-right";
   };
   
   # Wofi app menu config
