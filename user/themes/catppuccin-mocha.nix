@@ -17,6 +17,13 @@
       package = pkgs.catppuccin-cursors.mochaMauve;
       size = 24;
     };
+    iconTheme = {
+      name = "cat-mocha-mauve";
+      package = pkgs.catppuccin-papirus-folders.override{
+	accent = "mauve";
+	flavor = "mocha";
+      };
+    };
   };
 
   # cursor config

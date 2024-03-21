@@ -84,13 +84,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
-  # Set up Thunar
-  services.gvfs.enable = true;
-  programs.thunar = {
-    enable = true;
-    plugins = with pkgs.xfce; [ thunar-archive-plugin thunar-volman thunar-media-tags-plugin ];
-  };
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
