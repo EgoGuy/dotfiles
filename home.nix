@@ -57,13 +57,6 @@
 
   programs.hyfetch = {
     enable = true;
-    settings = {
-      preset = "bisexual";
-      mode = "rgb";
-      color_allign = {
-	mode = "horizontal";
-      };
-    };
   };
 
   # zsh config
