@@ -85,10 +85,6 @@
     textColor = "#cdd6f4";
     progressColor = "over #313244";
     backgroundColor = "#1e1e2e";
-    extraConfig = "
-      [urgency=high]
-      border-color=#fab387
-    ";
   };
   
   # Wofi app menu config

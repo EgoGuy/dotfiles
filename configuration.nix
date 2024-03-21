@@ -90,11 +90,11 @@
     neovim
     wget
     git
-    ranger
     neofetch
     cmake
     pavucontrol
     pamixer
+    xfce.thunar
   ];
 
   fonts = {
@@ -119,6 +119,16 @@
       monospace = [ "Liberation" ];
       emoji = [ "Noto Color Emoji" ];
     };
+  };
+  
+  # Thunar setup
+  programs.thunar = {
+    enable = true;
+    plugins = with pkgs.xfce; [
+      thunar-volman
+      thunar-archive-plugin
+      thunar-media-tags-plugin
+    ];
   };
 
   # Some programs need SUID wrappers, can be configured further or are

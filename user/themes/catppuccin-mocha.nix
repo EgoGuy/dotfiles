@@ -18,19 +18,30 @@
       size = 24;
     };
     iconTheme = {
-      name = "cat-mocha-mauve";
-      package = pkgs.catppuccin-papirus-folders.override{
+      name = "Papirus-Dark";
+      package = (pkgs.catppuccin-papirus-folders.override{
 	accent = "mauve";
 	flavor = "mocha";
-      };
+      });
+    };
+    gtk3.extraConfig = {
+      Settings = "gtk-application-prefer-dark-theme=1";
+    };
+    gtk4.extraConfig = {
+      Settings = "
+	gtk-application-prefer-dark-theme=1
+	gtk-cursor-theme-name=Catppuccin-Mocha-Mauve
+      ";
     };
   };
+  home.sessionVariables.GTK_THEME = "Gruvbox-Dark";
 
   # cursor config
   home.pointerCursor = {
     package = pkgs.catppuccin-cursors.mochaMauve;
     name = "Catppuccin-Mocha-Mauve-Cursors";
     size = 24;
+    gtk.enable = true;
   };
 
   xdg.configFile = {
