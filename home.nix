@@ -55,13 +55,24 @@
     # '')
   ];
 
+  programs.hyfetch = {
+    enable = true;
+    settings = {
+      preset = "bisexual";
+      mode = "rgb";
+      color_allign = {
+	mode = "horizontal";
+      };
+    };
+  };
+
   # zsh config
   programs.zsh = {
     enable = true;
     autocd = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
-    initExtra = "neofetch"; 
+    initExtra = "hyfetch"; 
     history = {
       size = 10000;
       path = "${config.xdg.dataHome}/zsh/history";
