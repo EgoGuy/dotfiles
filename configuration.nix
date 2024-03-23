@@ -94,7 +94,6 @@
     cmake
     pavucontrol
     pamixer
-    xfce.thunar
   ];
 
   fonts = {
@@ -129,6 +128,10 @@
       thunar-archive-plugin
       thunar-media-tags-plugin
     ];
+  };
+  services.gvfs = {
+    enable = true;
+    package = pkgs.gnome2.gvfs;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
