@@ -9,6 +9,7 @@
     enable = true;
     extraConfig = "
       exec-once = swww init
+      exec-once = waybar
       exec-once = mako
       monitor = eDP-1, 1920x1080@60, 0x0, 1
     ";
