@@ -110,6 +110,7 @@
       corefonts
       vistafonts
       powerline-fonts
+      powerline-symbols
       font-awesome
     ];
     fontconfig.defaultFonts = {

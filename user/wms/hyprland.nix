@@ -16,8 +16,8 @@
     settings = {
       general = with config.colorScheme.palette; {
 	border_size = 2;
-	gaps_in = 5;
-	gaps_out = 5;
+	gaps_in = 2;
+	gaps_out = 2;
         "col.active_border" = "rgba(${base0E}ff) rgba(${base09}ff) 60deg";
 	"col.inactive_border" = "rgba(${base00}ff)";
 	layout = "dwindle";
