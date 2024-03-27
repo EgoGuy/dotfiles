@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       # ./system/wms/hyprland.nix
+      ./system/wms/river.nix
       ./system/greetd.nix
     ];
   
