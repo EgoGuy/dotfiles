@@ -16,7 +16,7 @@
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   imports = [
-    ./user/wms/hyprland.nix
+    # ./user/wms/hyprland.nix
     ./user/themes/catppuccin-mocha.nix
     ./user/terminal/alacritty.nix
     inputs.nix-colors.homeManagerModules.default
